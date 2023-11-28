@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tereza Středová</h1>
+    <p>&nbsp;
+    <strong>Lorem</strong> ipsum, dolor sit <em>amet</em> consectetur <sub>adipisicing</sub> elit. <sup>Modi</sup> consequatur in fuga voluptate facere id ratione est aliquid. Porro officia repellat laborum maiores aliquid itaque id voluptates velit distinctio voluptate.</p>
+<ul><li>Středa</li>
+    <li>Čtvrtek</li>
+    <li>Neděle</li></ul>
+
+<ol type="i">
+    <li>Srpen</li> 
+    <li>Září</li> 
+    <li>Listopad</li></ol>
+<nav>
+        <a href="index.html">Domů</a>
+        <a href="obrazky.html">Obrázky</a></nav>
+
+<form action="data.html" method="get">
+    <table>
+        <thead>
+            <tr>
+               <th colspan="2">
+                Registrace
+               </th>  
+            </tr>
+
+            <tr>
+                <td>Jméno:</td>
+                <td><input id="jmeno" type="text" name="jmeno" required></td> 
+            </tr>
+
+            <tr>
+                <td>Heslo:</td>
+                <td><input id="heslo" type="password" name="heslo" required></td>
+            </tr>
+
+            <tr>
+                <td>Věk: </td>
+                <td><input id="vek" type="number" name="vek" required min="0" max="150"></td>
+            </tr>
+
+            <tr>
+                <td>E-mail:</td>
+                <td><input id="email" type="text" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td>Student: </td>
+                <td><input id="student" type="checkbox" name="student"></td>
+            </tr>
+            
+            <tr>
+                <td>Pohlaví: </td>
+                <td>
+                    <label for="muz">Muž: </label>
+                    <input id="muz" type="radio" name="pohlavi" value="muz">
+                    <label for="zena">Žena: </label>
+                    <input id="zena" type="radio" name="pohlavi" value="zena">
+                    <label for="jine">Jiné: </label>
+                    <input id="jine" type="radio" name="pohlavi" value="jine">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Vzdělání: </td>
+                <td><select name="vzdelani" id="vzdelani">
+                    <option value="ZS">Základní škola</option>
+                    <option value="SS">Střední škola</option>
+                    <option value="VS">Vysoká škola</option>
+                </select>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>

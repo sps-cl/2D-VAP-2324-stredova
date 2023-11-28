@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tbody>
+        <tr>
+            <th>Jméno</th>
+            <th>Přijmění</th>
+            <th>Pohlaví</th>
+        </tr>
+    </thead>
+    <body>
+        <tr>
+            <td>Jan</td>
+            <td>Novák</td>
+            <td>Muž</td>
+        </tr>
+    </body>
+        <tr>
+            <td>Alena</td>
+            <td>Malá</td>
+            <td>Žena</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                Účastníci soutěže
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+    <form action="data.html" method="get">
+        <label for="Jmeno">Vaše jméno:</label>
+        <input id="Jmeno" type="text" name="Jmeno" required>
+        <br>
+        <label for="Heslo">Vaše heslo:</label>
+        <input id="Heslo" type="Password" name="Heslo" required>
+        <br>
+        <label for="Vek">Váš věk:</label>
+        <input id="Vek" type="Number" name="Vek" required min="13" max="130">
+        <br>
+        <label for="student">Student:</label>
+        <input id="student" type="checkbox" name="Student" value="true">
+        <br>
+        <input type="submit">
+         <br>
+         <label for="pohlavi">Pohlaví: </label>
+         <div>
+            <label for="muz"> Muž </label>
+            <input id="muz" type="radio" name="pohlavi" value="muz">
+            <label for="zena"> Žena </label>
+            <input id="zena" type="radio" name="pohlavi" value="zena">
+        </div>
+        <label for="vzdelani"> Vzdělání: </label>
+        <select name="vzdelani" id="vzdelani">
+            <option value="ZS">Základní škola</option>
+            <option value="SS">Střední škola</option>
+        </select>
+        <input type="submit" value="Zaregistrovat">
+    </form>
+</body>
+</html>
